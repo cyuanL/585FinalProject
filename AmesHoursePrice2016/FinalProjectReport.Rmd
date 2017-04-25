@@ -18,11 +18,11 @@ library(leaflet)
 Story Country,  IA/City of Ames data was downloaded from the [Beacon website](https://beacon.schneidercorp.com/Application.aspx?AppID=165&LayerID=2145&PageTypeID=2&PageID=1279&KeyValue=0916402205) by setting `Sale Date` to be 18 month and filtering `Bedrooms` 
 from 0 upto 8 one by one. Then we processed those datasets as follows:
 
-  1. Got rid of all records before 2016 Janunary, since we were more interested in the housing sale in 2016.
-  2. Created a new feature `house age` defined by using 2016 substracting the year of house was built and then grouped this feature `house age`  into 13 groups. 
-  3. Add the longititunidial and latitudinal information using googel API into the data set.
+  1. Got rid of all records before 2016 January, since we were more interested in the housing sale in 2016.
+  2. Created a new feature `house age` defined by using 2016 subtracting the year of house was built and then grouped this feature `house age`  into 13 groups. 
+  3. Add the longitudinal and latitudinal information using Google API into the data set.
 
-After the above processong, there are 952 observations left to the following visilization. 
+After the above processing, there are 952 observations left to the following visualization. 
 
 ## Data variable description 
 
@@ -61,7 +61,7 @@ print(datVar.xtable, include.rownames = F, comment = FALSE, floating = FALSE)
 # House Map Location
 ## Sale price distribution
 In this section, we were interested how the house sale price changes at different 
-location. On overall average of sale price in story county in 2016 was \$180K - \$190K. It located near Grand Avenue, 13 street and 24 street and near Ontario street as well. We noticed that the highest hosue sale on average was tent to centered near the northridge heights park area in 2016 (Fig. \ref{fig:price63}). 
+location. On overall average of sale price in story county in 2016 was \$180K - \$190K. It located near Grand Avenue, 13 street and 24 street and near Ontario street as well. We noticed that the highest house sale on average was tent to centered near the northridge heights park area in 2016 (Fig. \ref{fig:price63}). 
 
 \begin{figure}[htbp]
   \centering
